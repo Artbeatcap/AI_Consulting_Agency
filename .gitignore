@@ -1,0 +1,23 @@
+# Dependencies
+node_modules/
+
+# PocketBase data and uploads
+apps/pocketbase/pb_data/
+
+# Environment and secrets
+.env
+.env.local
+.env.*.local
+*.env
+
+# Build output
+dist/
+build/
+
+# OS and editor
+.DS_Store
+Thumbs.db
+*.log
+
+# Optional: uncomment if you prefer not to share editor config
+# .vscode/
