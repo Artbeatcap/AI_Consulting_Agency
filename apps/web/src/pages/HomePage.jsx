@@ -10,6 +10,7 @@ import ResultsSection from '@/components/ResultsSection.jsx';
 import AutomationVisualizationEngine from '@/components/AutomationVisualizationEngine.jsx';
 import AutomationOpportunityScanner from '@/components/AutomationOpportunityScanner.jsx';
 import FinalCTASection from '@/components/FinalCTASection.jsx';
+import StrategyCallForm from '@/components/StrategyCallForm.jsx';
 import Footer from '@/components/Footer.jsx';
 
 const HomePage = () => {
@@ -33,6 +34,7 @@ const HomePage = () => {
         <AutomationVisualizationEngine />
         <AutomationOpportunityScanner />
         <FinalCTASection />
+        <StrategyCallForm id="strategy-form" />
         <Footer />
       </div>
     </>

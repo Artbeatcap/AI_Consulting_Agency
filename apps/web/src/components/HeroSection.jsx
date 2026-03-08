@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { ArrowRight, Sparkles } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -129,18 +130,23 @@ const HeroSection = () => {
             >
               <Button
                 size="lg"
+                asChild
                 className="bg-gradient-to-r from-blue-500 via-violet-500 to-blue-600 hover:from-blue-600 hover:via-violet-600 hover:to-blue-700 text-white font-semibold px-8 py-6 text-lg rounded-xl shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-300"
               >
-                Book Your Automation Strategy Call
-                <ArrowRight className="ml-2 w-5 h-5" />
+                <Link to="/book-call">
+                  Book Your Automation Strategy Call
+                  <ArrowRight className="ml-2 w-5 h-5" />
+                </Link>
               </Button>
-              
               <Button
                 size="lg"
                 variant="outline"
+                asChild
                 className="border-2 border-blue-400 text-blue-400 hover:bg-blue-400/10 font-semibold px-8 py-6 text-lg rounded-xl hover:scale-105 transition-all duration-300"
               >
-                See What Your Business Could Automate
+                <a href="#lead-capture">
+                  See What Your Business Could Automate
+                </a>
               </Button>
             </motion.div>
           </motion.div>
